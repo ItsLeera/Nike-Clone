@@ -1,0 +1,714 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainContainer{
+    background-color: #FF7334;
+    width: 100%;
+}
+/* .nav{
+    max-width: 100%;
+    width: 100%;
+    height: 30%;
+    font-weight: 500;
+    font-family:"Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+    background-color: #FF7334;
+
+} */
+.first-nav{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    padding: 2px 48px;
+    background-color: #FF7334;
+    font-weight: 500;
+    font-family:"Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+    display: flex;
+}
+.Fnav-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(11, 237, 245); */
+}
+.Fnav-logo{
+    width: 6%;
+    display: flex;
+    /* background-color: #FF7334; */
+    gap: 20px;
+    align-items: center;
+}
+.Fnav-logo img{
+    width: 100%;
+    height: 100%;
+}
+/* .Fnav-logo div :first-child{
+    margin-bottom: 10px;
+} */
+.Fnav-right{
+    width: 50%;
+    height: 100%;
+}
+.nav-right{
+    /* background-color: aquamarine; */
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    padding: 5px;
+    font-size: 12px;
+    align-items: center; 
+    justify-content: end;
+}
+.nav-right a{
+    text-decoration: none;
+    color: black;
+}
+.nav-right img{
+    width: 2%;
+    height: 40%;
+}
+.nav-right :hover{
+    color: rgba(240, 248, 255, 0.619);
+}
+
+/* second nav */
+.second-nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    background-color: #FF7334;
+    font-weight: 500;
+    font-family:"Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+    justify-content: space-between;
+    padding:0px 48px;
+    font-size: 15px;
+}
+.Snav-logo{
+    align-items: center;
+    width: 6%;
+    height: 5%;
+    /* background-color: aliceblue; */
+}
+.Snav-logo img{
+    width: 100%;
+    height: 100%;
+}
+.list{
+    display: flex;
+    gap: 23px;
+    list-style-type: none;
+    align-items: center;
+    letter-spacing:1px;
+}
+.list a{
+    text-decoration: none;
+    color: black;
+}
+.snav-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.btn{
+    border-radius: 20px;
+    width: auto;
+    height: 50%;
+    display: flex;
+    padding: 5px 20px;
+    gap: 10px;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    background-color: #FF7334;
+    border: 1px solid black;
+    font-size: 17px;
+
+}
+.btn img{
+    width: 15%;
+    height: 80%;
+}
+.btn :hover{
+    background-color: aliceblue;
+}
+.icon{
+    /* background-color: rgb(116, 173, 59); */
+    width: 20%;
+    height: 30%;
+    display: flex;
+    gap: 15px;
+}
+.icon img{
+    width: 100%;
+    height: 100%;
+}
+.icon :hover{
+    background-color: aliceblue;
+}
+.hamIcon{
+    display: none;
+}
+
+
+/* container */
+.container{
+    max-width: 100%;
+    width: 100%;
+    background-color: #FF7334;
+    /* font-weight: 500;
+    font-size: 50px;
+    font-family: "Helvetica Now Text Medium",Helvetica,Arial,sans-serif; */
+    /* padding:0px 48px; */
+    padding: 5px;
+}
+.acg{
+    width: 100%;
+}
+.acg img{
+    width: 100%;
+}
+.nike-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    padding: 15px;
+}
+.nike-video {
+    width: 100%;
+    height: 120vh;
+    object-fit: contain;
+    overflow: clip;
+}
+
+
+/*. nike-video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+.nike-writeup{
+    position: absolute;
+    left: 33%;
+    top: 115%;
+    /* background-color: #14171b; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+}
+.nike-writeup h2{
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+.nike-writeup h6{
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+.btns button{
+    width: auto;
+    height: 100%;
+    padding: 9px 25px ;
+    background-color: #FF7334;
+    border-radius: 5px;
+    gap: 4px;
+    border: none;
+}
+.btns{
+    width: auto;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.nike-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 48px;
+}
+.pic1{
+    width: 50%;
+    color: white;
+    /* font-size: 16px;
+    font-weight: 500; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.pic1 img{
+    width: 100%;
+}
+.image-writeup{
+    position: absolute;
+    left: 20%;
+    right: 20%; 
+    top: 70%;
+    font-family: "Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+.image-writeup h6{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.pic1 button{
+    padding: 10px;
+    background-color: #FF7334;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+.pic2{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.pic2 img{
+    width: 100%;
+}
+.pic2 button{
+    padding: 10px;
+    background-color: #FF7334;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    border: none;
+}
+.acgHike{
+    width: 100%;
+    position: relative;
+}
+.acgHike img{
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.hike-writeup{
+    color: white;
+    font-family: "Helvetica Now Text Medium",Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+}
+.hike-writeup h5{
+    font-size: 33px;
+    font-weight: 700;
+}
+.hike-writeup p{
+    padding: 2px 20px;
+}
+.hike{
+    background-color: #FF7334;
+    border-radius: 3px;
+    width: auto;
+    padding: 5px;
+    margin: 10px 50px;
+    border: none;
+}
+.acg-text{
+    padding: 48px 0;
+    width: 100%;
+    /* padding: 20px 0px; */
+    /* height: 50vh; */
+    /* background-image: url(../media.nike/nike-just-do-it\ \(1\).avif);
+    background-position: center;
+    background-repeat: no-repeat; */
+    
+}
+.acg-text img{
+    width: 100%;
+    height: 100%;
+}
+.acg-text >:nth-child(2) {
+    display: none;
+}
+.foot{
+    width: 100%;
+    height: 100vh;
+    color: #9E9EA0;
+    /* background-color: #14171b; */
+    background-color: #1f1f21;
+    padding: 48px 48px 70px 48px;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Helvetica Now Text Medium",Helvetica,Arial,sans-serif;; 
+}
+.footer-menu{
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    line-height: 2.5;
+    padding: 50px 0;
+}
+.menu img{
+    width: 10%;
+    background-color: black;
+    /* display: none; */
+}
+.language{
+    display: flex;
+    gap: 10px;
+}
+.language img{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+.footer-list{
+    display: flex;
+}
+.footer-list ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.foot h3{
+    color: white;
+    padding: 30px 0px;
+}
+
+
+
+
+
+@media screen and (max-width: 1100px) { 
+    /* .nike-video{ */
+       /* height: 650px; */
+    /* } */
+
+    /* .nike-writeup{ */
+        /* top: 83%; */
+        /* left: 31%; */
+    /* } */
+    
+    .btn{
+        font-size: 0;
+        line-height: 0;
+    }
+    .btn img{
+        padding: 0px;
+        width: auto;
+    }
+    .foot{
+        height: 100%;
+    }
+    .footer-menu{
+        display: flex;
+        /* flex-direction: column; */
+    }
+    .footer-list ul{
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+
+    /* Nav bar */
+    .first-nav{
+        display: none;
+    }
+    .second-nav{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 700px;
+        height: 10%;
+    }
+    .Snav-logo{
+        width: 50%;
+        padding-top: 15px;
+    }
+    .second-nav .list{
+        display: none;
+    }
+    .btn{
+        border-radius: 50%;
+        padding: 10px 7px;
+    }
+    .btn img{
+        width: 100%;
+    }
+    .icon{
+        width: 20%;
+    }
+    .icon img{
+        width: 100%;
+    }
+    .hamIcon{
+        display: block;
+    }
+
+    /* container */.nike-video{
+        height: 110vh;
+        width: 100%;
+        object-fit: contain;
+    }
+    .nike-video video{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        padding: 0px;
+        position: relative;
+    }
+    .nike-writeup{
+        top: 75%;
+        left: 20%;
+        right: 15%;
+        font-weight: 100;
+        /* transform: translate(-50%, -50%); */
+    }
+    .nike-writeup h2 {
+        font-size: 35px;
+        font-weight: 700;
+        padding: none;
+    }
+    .btns >:nth-child(3) {
+        display: none;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px black solid; */
+        padding: none;
+    }
+
+
+    /* footer */
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-menu p{
+        display: none;
+    }
+
+
+
+}
+
+
+
+
+/* @media screen and (max-width: 960px) {
+    .footer-menu p{
+        display: none;
+    }
+} */
+
+
+@media screen and (max-width: 530px) {
+    .acg-text >:first-child{
+        display: block;
+    }
+    .acg-text >:nth-child(2) {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 481px) {
+    .mainContainer{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Nav bar */
+    .first-nav{
+        display: none;
+    }
+    .second-nav{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 50px;
+        height: 50px;
+    }
+    .Snav-logo{
+        width: 100%;
+        padding-top: 15px;
+    }
+    .second-nav .list{
+        display: none;
+    }
+    .btn{
+        border-radius: 50%;
+        padding: 10px 5px;
+    }
+    .btn img{
+        width: 5%;
+    }
+    .icon{
+        width: 10%;
+    }
+    .icon img{
+        width: 100%;
+    }
+    .hamIcon{
+        display: block;
+    }
+    .nike-video{
+        width: 100%;
+        height: 140vh;
+    }
+}
+
+
+
+@media screen and (max-width:480px) {
+    .mainContainer{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Nav bar */
+    .first-nav{
+        display: none;
+    }
+    .second-nav{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .Snav-logo{
+        width: 100%;
+        padding-top: 15px;
+    }
+    .second-nav .list{
+        display: none;
+    }
+    .btn{
+        border-radius: 50%;
+        padding: 10px 5px;
+    }
+    .btn img{
+        width: 5%;
+    }
+    .icon{
+        width: 10%;
+    }
+    .icon img{
+        width: 100%;
+    }
+    .hamIcon{
+        display: block;
+    }
+    /* container */
+    .container{
+        width: 100%;
+        padding: 0px;
+    }
+    .nike-video{
+        height: 110vh;
+        width: 100%;
+        object-fit: contain;
+    }
+    .nike-video video{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        padding: 0px;
+        position: relative;
+    }
+    .nike-writeup{
+        top: 75%;
+        left: 20%;
+        right: 15%;
+        font-weight: 100;
+        /* transform: translate(-50%, -50%); */
+    }
+    .nike-writeup h2 {
+        font-size: 35px;
+        font-weight: 700;
+        padding: none;
+    }
+    .btns >:nth-child(3) {
+        display: none;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px black solid; */
+        padding: none;
+    }
+    .nike-image{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    .nike-image img{
+        width: 100%;
+    }
+    .pic1{
+        width: 100%;
+    }
+    .pic2{
+        width: 100%;
+        height: auto;
+    }
+    .image-writeup{
+        top: 60%;
+        right: 10%;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .image-writeup h6{
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .hike-writeup{
+        top: 50%;
+        left: 35%;
+        padding: none;
+    }
+    .bttn{
+        padding: 20px;
+    }
+    .hike-writeup h5{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .acg-text >:first-child {
+        display: none;
+    }
+    .acg-text >:nth-child(2) {
+        display: block;
+    }
+    .footer-list{
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    
+}
+
+
+

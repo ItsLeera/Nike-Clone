@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.span{
+    background: darkcyan;
+    color: black;
+    display: flex;
+
+}
+summary {
+    list-style: none;
+    cursor: default;
+    font-weight: bolder;
+}
+details {
+    pointer-events: none;
+}
+details ul {
+    list-style: none;
+
+}
+details ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
